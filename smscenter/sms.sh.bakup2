@@ -1,0 +1,25 @@
+#!/bin/sh
+from=$SMS_1_NUMBER
+message=$SMS_1_TEXT
+reply=""
+
+#perintah lampu 1
+if test "$message" | grep -iq Nyalakan lampu 1; then
+    python /home/pi/smscenter/lampu1on.py
+    reply="Lampu 1 telah nyala!"
+
+elif test "$message" | grep -iq Matikan lampu 1; then
+    python /home/pi/smscenter/lampu1off.py
+    reply="Lampu 1 telah mati!"
+
+
+#help syntax
+elif test "$message" | grep -iq  Help; then
+    reply="Syntax yaitu 'Nyalakan atau Matikan' lampu '1/2'(no lampu)"
+
+
+else
+    reply="Salah syntax ? balas 'Help' untuk keterangan lebih lanjut"
+fi
+
+echo "$reply" | sudo gammu sendsms TEXT "$from"

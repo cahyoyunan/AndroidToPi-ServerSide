@@ -1,0 +1,24 @@
+; This file format was designed for Gammu and is compatible with Gammu+
+; See <http://www.gammu.org> for more info
+; Saved 20160727T071953 (Wed 27 Jul 2016 07:19:53 )
+
+[SMSBackup000]
+; Terdeteksi Gas Segera Cek sensor. Dikirim dari AndroidToPi
+PDU = Submit
+DateTime = 20160727T071953Z
+State = Sent
+Number = "085880388574"
+NumberUnicode = 003000380035003800380030003300380038003500370034
+Name = ""
+NameUnicode = 
+Text00 = 0054006500720064006500740065006B0073006900200047006100730020005300650067006500720061002000430065006B002000730065006E0073006F0072002E002000440069006B006900720069006D0020006400610072006900200041006E0064
+Text01 = 0072006F006900640054006F00500069
+Coding = Default_No_Compression
+Folder = 1
+Length = 58
+Class = -1
+ReplySMSC = False
+RejectDuplicates = False
+ReplaceMessage = 0
+MessageReference = 0
+

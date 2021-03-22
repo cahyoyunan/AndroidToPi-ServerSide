@@ -1,0 +1,27 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this!
+port = /dev/ttyUSB0
+connection = at
+# Debugging
+#logformat = textall
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+RunOnReceive = /home/pi/smscenter/sms.sh
+service = files
+logfile = syslog
+# Increase for debugging information
+debuglevel = 0
+
+
+# Paths where messages are stored
+inboxpath = /home/pi/smscenter/inbox/
+outboxpath = /home/pi/smscenter/outbox/
+sentsmspath = /home/pi/smscenter/sent/
+errorsmspath = /home/pi/smscenter/error/
+
+[include_numbers]
+number1 = +6281902476054

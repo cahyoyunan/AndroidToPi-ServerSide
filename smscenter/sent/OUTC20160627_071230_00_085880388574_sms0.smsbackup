@@ -1,0 +1,23 @@
+; This file format was designed for Gammu and is compatible with Gammu+
+; See <http://www.gammu.org> for more info
+; Saved 20160727T071230 (Wed 27 Jul 2016 07:12:30 )
+
+[SMSBackup000]
+; Lampu 2 telah nyala
+PDU = Submit
+DateTime = 20160727T071230Z
+State = Sent
+Number = "085880388574"
+NumberUnicode = 003000380035003800380030003300380038003500370034
+Name = ""
+NameUnicode = 
+Text00 = 004C0061006D0070007500200032002000740065006C006100680020006E00790061006C0061
+Coding = Default_No_Compression
+Folder = 1
+Length = 19
+Class = -1
+ReplySMSC = False
+RejectDuplicates = False
+ReplaceMessage = 0
+MessageReference = 0
+
